@@ -1,0 +1,48 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "sandboxv3",
+      "image": "386574463109.dkr.ecr.eu-west-3.amazonaws.com/sandboxv3:latest",
+      "cpu": 0,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 0,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "entryPoint": [],
+      "command": [],
+      "environment": [],
+      "mountPoints": [],
+      "volumesFrom": []
+    }
+  ],
+  "family": "ec2TaskDefv2",
+  "taskRoleArn": "arn:aws:iam::386574463109:role/ecsTaskExecutionRole",
+  "revision": 1,
+  "volumes": [],
+  "status": "ACTIVE",
+  "requiresAttributes": [
+    {
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "name": "com.amazonaws.ecs.capability.task-iam-role"
+    }
+  ],
+  "placementConstraints": [],
+  "compatibilities": [
+    "EXTERNAL",
+    "EC2"
+  ],
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "cpu": "1024",
+  "memory": "100",
+  "registeredAt": "2023-04-10T07:14:57.543Z",
+  "registeredBy": "arn:aws:iam::386574463109:root",
+  "tags": []
+}
