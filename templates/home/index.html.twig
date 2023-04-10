@@ -1,0 +1,168 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <section class="col-md-10 col-lg-8 col-xl-7" id="articles-intro">
+            <div class="article1">
+                <div class="div-article-image">
+                    <img class="article-image" src="{{ asset('images/livre_route_destine.jpeg') }}" alt="">
+                </div>
+                <div class="mt-3">
+                    <h4>Sur la route de l’école, la destinée</h4>
+                    <p class="">
+                        Cet ouvrage rappel à l’homme que la vie est une école. Ce livre est le résumé de la vie
+                        de El Hadji Tamboura. Hamadou Tamboura a une riche carrière professionnelle qui lui permet
+                        de découvrir l’homme. Il s’est investi dans la formation des jeunes. L’ouvrage nous renseigne
+                        également
+                        sur la foi de El Hadji Tamboura. L’ouvrage se termine par son rêve. L’ouvrage présente le
+                        courage,
+                        l’endurance, l’engagement dans le travail bien fait, l’honnêteté et l’amour de son village
+                    </p>
+                    <a class="article-link" href="{{ path('article_destine') }}" type="button">Lire</a>
+                </div>
+            </div>
+            <div class="article2">
+                <div class="div-article-image">
+                    <img class="article-image" src="{{ asset('images/lancement.jpeg') }}" alt="">
+                </div>
+                <div class="mt-3">
+                    <h4>Début de nos activités</h4>
+                    <p class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis finibus orci, vitae
+                        iaculis
+                        nisl consequat quis. Ut at nulla molestie, vestibulum massa pharetra, tempor ipsum. Proin id
+                        lectus
+                        nec elit tempor luctus. Vestibulum sed sapien elit. Vivamus non leo tempus, sodales magna nec,
+                        tempus ante. Donec sit amet quam tellus
+                    </p>
+                    <a class="article-link" href="{{ path('article_activites') }}" type="button">Lire</a>
+                </div>
+            </div>
+        </section>
+        <section class="donate col-md-10 col-lg-8 col-xl-7" id="donate">
+            <div class="section_details">
+                <h1>Donner aujourd'hui</h1>
+                <p><i>Afin de nous soutenir dans nos actions</i></p>
+            </div>
+            <div class="donate_amount">
+                <div class="amount">
+                    <span class="amount-item">100cfa</span>
+                    <span class="amount-item">200cfa</span>
+                    <span class="amount-item">500cfa</span>
+                    <span class="amount-item">1000cfa</span>
+                </div>
+                <input class="donation-input" name="donation-input" id="donation-input" type="text" placeholder="Autre montant (Cfa)"/>
+            </div>
+            <button class="btn-donate">Donner</button>
+        </section>
+        <section id="articles" class="articles col-md-12 col-lg-12 col-xl-12">
+            <div class="div-titre">
+                <h1 class="titre">Nos derniers articles</h1>
+            </div>
+                <div id="carouselExampleCaptions" class="carousel carousel-dark slide mt-3" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-group">
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="card agriculture show w-75">
+                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Article sur l'agriculture</h5>
+                                            <p class="card-text">Contenu du futur article.</p>
+                                            <a href="{{ path('article_agriculture') }}" class="article-link">Lire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="card sante show w-75">
+                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Article sur la santé</h5>
+                                            <p class="card-text">Contenu du futur article.</p>
+                                            <a href="{{ path('article_sante') }}" class="article-link">Lire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="card agriculture show w-75">
+                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Article sur l'agriculture</h5>
+                                            <p class="card-text">Contenu du futur article.</p>
+                                            <a href="{{ path('article_agriculture') }}" class="article-link">Lire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-group">
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="card education show w-75">
+                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Article sur l'éducation</h5>
+                                            <p class="card-text">Contenu du futur article.</p>
+                                            <a href="{{ path('article_education') }}" class="article-link">Lire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="card sante show w-75">
+                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Article sur la santé</h5>
+                                            <p class="card-text">Contenu du futur article.</p>
+                                            <a href="{{ path('article_sante') }}" class="article-link">Lire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="card agriculture show w-75">
+                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Article sur agriculture</h5>
+                                            <p class="card-text">Contenu du futur article.</p>
+                                            <a href="{{ path('article_agriculture') }}" class="article-link">Lire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        </section>
+        <section class="about-us col-md-12 col-lg-12 col-xl-12" id="about-us">
+            <div class="div-titre">
+                <h1 class="titre">À propos de l'association</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="about-us-card col-md-12">
+                        <img class="about-us-card-image" src="{{ asset('images/icons/nouvelle-annee.png') }}" alt="nouvelle annee">
+                        <h5 class="about-us-card-titre">Création de l'association</h5>
+                    </div>
+                    <div class="about-us-card col-md-12">
+                        <img class="about-us-card-image" src="{{ asset('images/icons/balance.png') }}" alt="food">
+                        <h5 class="about-us-card-titre">Forme juridique</h5>
+                        <small>Association individuelle</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
