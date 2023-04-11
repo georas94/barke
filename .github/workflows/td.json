@@ -1,8 +1,8 @@
 {
   "containerDefinitions": [
     {
-      "name": "sandboxv3",
-      "image": "386574463109.dkr.ecr.eu-west-3.amazonaws.com/sandboxv3:latest",
+      "name": "barke",
+      "image": "386574463109.dkr.ecr.eu-west-3.amazonaws.com/barke:latest",
       "cpu": 0,
       "portMappings": [
         {
@@ -19,7 +19,7 @@
       "volumesFrom": []
     }
   ],
-  "family": "ec2TaskDefv2",
+  "family": "ec2BarkeTaskDefv1",
   "taskRoleArn": "arn:aws:iam::386574463109:role/ecsTaskExecutionRole",
   "revision": 1,
   "volumes": [],
@@ -42,7 +42,7 @@
   ],
   "cpu": "1024",
   "memory": "100",
-  "registeredAt": "2023-04-10T07:14:57.543Z",
+  "registeredAt": "2023-04-11T00:13:11.470Z",
   "registeredBy": "arn:aws:iam::386574463109:root",
   "tags": []
 }

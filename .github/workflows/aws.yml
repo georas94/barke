@@ -7,12 +7,12 @@ on:
 
 env:
   AWS_REGION: eu-west-3
-  ECR_REPOSITORY: sandboxv3
-  ECS_SERVICE: ec2Servicev2
-  ECS_CLUSTER: ec2Clusterv2
+  ECR_REPOSITORY: barke
+  ECS_SERVICE: ec2BarkeServicev1
+  ECS_CLUSTER: ec2BarkeClusterv1
   ECS_TASK_DEFINITION: .github/workflows/td.json
 
-  CONTAINER_NAME: sandboxv3
+  CONTAINER_NAME: barke
 
 
 jobs:
