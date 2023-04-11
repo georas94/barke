@@ -7,7 +7,7 @@
       "portMappings": [
         {
           "containerPort": 80,
-          "hostPort": 0,
+          "hostPort": 80,
           "protocol": "tcp"
         },
         {
@@ -24,15 +24,25 @@
       "volumesFrom": []
     }
   ],
-  "family": "ec2BarkeTaskDefv1",
-  "taskRoleArn": "arn:aws:iam::386574463109:role/ecsTaskExecutionRole",
-  "executionRoleArn": "arn:aws:iam::386574463109:role/ecsTaskExecutionRole",
+  "family": "ec2BarkeTaskDefv2",
   "volumes": [],
+  "status": "ACTIVE",
+  "requiresAttributes": [
+    {
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    }
+  ],
   "placementConstraints": [],
+  "compatibilities": [
+    "EXTERNAL",
+    "EC2"
+  ],
   "requiresCompatibilities": [
     "EC2"
   ],
   "cpu": "1024",
   "memory": "1024",
+  "registeredAt": "2023-04-11T01:22:16.949Z",
+  "registeredBy": "arn:aws:iam::386574463109:root",
   "tags": []
 }
