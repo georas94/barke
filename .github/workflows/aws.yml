@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: eu-west-3
   ECR_REPOSITORY: barke
-  ECR_REGISTRY_LINK: 386574463109.dkr.ecr.eu-west-3.amazonaws.com/barke:latest
+  ECR_REGISTRY_LINK: 386574463109.dkr.ecr.eu-west-3.amazonaws.com
   ECS_SERVICE: ec2BarkeServicev1
   ECS_CLUSTER: ec2BarkeClusterv1
   ECS_TASK_DEFINITION: .github/workflows/td.json
