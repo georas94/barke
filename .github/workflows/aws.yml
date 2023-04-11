@@ -8,6 +8,7 @@ on:
 env:
   AWS_REGION: eu-west-3
   ECR_REPOSITORY: barke
+  ECR_REGISTRY_LINK: 386574463109.dkr.ecr.eu-west-3.amazonaws.com/barke:latest
   ECS_SERVICE: ec2BarkeServicev1
   ECS_CLUSTER: ec2BarkeClusterv1
   ECS_TASK_DEFINITION: .github/workflows/td.json
@@ -39,8 +40,8 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
-          ECR_REGISTRY: "386574463109.dkr.ecr.eu-west-3.amazonaws.com"
-          ECR_REPOSITORY: "sandboxv3"
+          ECR_REGISTRY: ${{ env.ECR_REGISTRY_LINK }}
+          ECR_REPOSITORY: ${{ env.ECR_REPOSITORY }}
           IMAGE_TAG: latest
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
