@@ -53,7 +53,8 @@
                     <span class="amount-item">500cfa</span>
                     <span class="amount-item">1000cfa</span>
                 </div>
-                <input class="donation-input" name="donation-input" id="donation-input" type="text" placeholder="Autre montant (Cfa)"/>
+                <input class="donation-input" name="donation-input" id="donation-input" type="text"
+                       placeholder="Autre montant (Cfa)"/>
             </div>
             <button class="btn-donate">Donner</button>
         </section>
@@ -61,90 +62,180 @@
             <div class="div-titre">
                 <h1 class="titre">Nos derniers articles</h1>
             </div>
-                <div id="carouselExampleCaptions" class="carousel carousel-dark slide mt-3" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card-group">
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card agriculture show w-75">
-                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Article sur l'agriculture</h5>
-                                            <p class="card-text">Contenu du futur article.</p>
-                                            <a href="{{ path('article_agriculture') }}" class="article-link">Lire</a>
-                                        </div>
-                                    </div>
+            <div class="">
+                <div class="news-slider">
+                    <div class="news-slider__wrp swiper-wrapper">
+                        <div class="news-slider__item swiper-slide">
+                            <a href="{{ path('article_agriculture') }}" class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">11</span>
+                                    <span class="news-date__txt">Avril</span>
                                 </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card sante show w-75">
-                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Article sur la santé</h5>
-                                            <p class="card-text">Contenu du futur article.</p>
-                                            <a href="{{ path('article_sante') }}" class="article-link">Lire</a>
-                                        </div>
-                                    </div>
+                                <div class="news__title">Lorem Ipsum Dolor Sit Amed</div>
+
+                                <p class="news__txt">
+                                    6
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s...
+                                </p>
+
+                                <div class="news__img">
+                                    <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}"
+                                         alt="Card image cap">
                                 </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card agriculture show w-75">
-                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Article sur l'agriculture</h5>
-                                            <p class="card-text">Contenu du futur article.</p>
-                                            <a href="{{ path('article_agriculture') }}" class="article-link">Lire</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="carousel-item">
-                            <div class="card-group">
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card education show w-75">
-                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Article sur l'éducation</h5>
-                                            <p class="card-text">Contenu du futur article.</p>
-                                            <a href="{{ path('article_education') }}" class="article-link">Lire</a>
-                                        </div>
-                                    </div>
+
+                        <div class="news-slider__item swiper-slide">
+                            <a href="{{ path('article_sante') }}" class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">8</span>
+                                    <span class="news-date__txt">Mars</span>
                                 </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card sante show w-75">
-                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Article sur la santé</h5>
-                                            <p class="card-text">Contenu du futur article.</p>
-                                            <a href="{{ path('article_sante') }}" class="article-link">Lire</a>
-                                        </div>
-                                    </div>
+                                <div class="news__title">Article santé</div>
+
+                                <p class="news__txt">
+                                    1
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s...
+                                </p>
+
+                                <div class="news__img">
+                                    <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}"
+                                         alt="Card image cap">
                                 </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="card agriculture show w-75">
-                                        <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Article sur agriculture</h5>
-                                            <p class="card-text">Contenu du futur article.</p>
-                                            <a href="{{ path('article_agriculture') }}" class="article-link">Lire</a>
-                                        </div>
-                                    </div>
+                            </a>
+                        </div>
+
+                        <div class="news-slider__item swiper-slide">
+                            <a href="{{ path('article_agriculture') }}" class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">3</span>
+                                    <span class="news-date__txt">Mars</span>
                                 </div>
-                            </div>
+                                <div class="news__title">Article agriculture</div>
+
+                                <p class="news__txt">
+                                    2
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s...
+                                </p>
+
+                                <div class="news__img">
+                                    <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}"
+                                         alt="Card image cap">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="news-slider__item swiper-slide">
+                            <a href="{{ path('article_education') }}" class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">3</span>
+                                    <span class="news-date__txt">Octobre</span>
+                                </div>
+                                <div class="news__title">Article éducation</div>
+
+                                <p class="news__txt">
+                                    3
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s...
+                                </p>
+
+                                <div class="news__img">
+                                    <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}"
+                                         alt="Card image cap">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="news-slider__item swiper-slide">
+                            <a href="{{ path('article_agriculture') }}" class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">16</span>
+                                    <span class="news-date__txt">Février</span>
+                                </div>
+                                <div class="news__title">Article agriculture</div>
+
+                                <p class="news__txt">
+                                    4
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s...
+                                </p>
+
+                                <div class="news__img">
+                                    <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}"
+                                         alt="Card image cap">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="news-slider__item swiper-slide">
+                            <a href="{{ path('article_sante') }}" class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">7</span>
+                                    <span class="news-date__txt">Janvier</span>
+                                </div>
+                                <div class="news__title">Article santé</div>
+
+                                <p class="news__txt">
+                                    5
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s...
+                                </p>
+
+                                <div class="news__img">
+                                    <img class="card-img-top" src="{{ asset('images/deplaces.jpeg') }}"
+                                         alt="Card image cap">
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+
+                    <div class="news-slider__ctr">
+                        <div class="news-slider__arrows">
+                            <button class="news-slider__arrow news-slider-prev">
+          <span class="icon-font">
+            <svg class="icon icon-arrow-left">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </span>
+                            </button>
+                            <button class="news-slider__arrow news-slider-next">
+          <span class="icon-font">
+            <svg class="icon icon-arrow-right">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </span>
+                            </button>
+                        </div>
+
+                        <div class="news-slider__pagination"></div>
+                    </div>
                 </div>
+                <svg hidden="hidden">
+                    <defs>
+                        <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+                            <title>arrow-left</title>
+                            <path
+                                    d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"
+                            ></path>
+                        </symbol>
+                        <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+                            <title>arrow-right</title>
+                            <path
+                                    d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"
+                            ></path>
+                        </symbol>
+                    </defs>
+                </svg>
+            </div>
         </section>
         <section class="about-us col-md-12 col-lg-12 col-xl-12" id="about-us">
             <div class="div-titre">
@@ -153,7 +244,8 @@
             <div class="d-flex justify-content-center">
                 <div class="d-flex flex-column justify-content-center">
                     <div class="about-us-card col-md-12">
-                        <img class="about-us-card-image" src="{{ asset('images/icons/nouvelle-annee.png') }}" alt="nouvelle annee">
+                        <img class="about-us-card-image" src="{{ asset('images/icons/nouvelle-annee.png') }}"
+                             alt="nouvelle annee">
                         <h5 class="about-us-card-titre">Création de l'association</h5>
                     </div>
                     <div class="about-us-card col-md-12">
